@@ -8,6 +8,7 @@ function agregarAmigo() {
         amigos.push(amigo);
         document.getElementById("amigo").value = "";
         mostrarAmigos();
+        document.getElementById("error").textContent = "";
     } else {
         document.getElementById("error").textContent = "Por favor, ingresa un nombre válido.";
     }
