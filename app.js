@@ -4,6 +4,10 @@ let amigos = [];
 
 function agregarAmigo() {
     let amigo = document.getElementById("amigo").value;
-    amigos.push(amigo);
+    if (amigo) {
+        amigos.push(amigo);
+        document.getElementById("amigo").value = "";
+        mostrarAmigos();
+    }
     console.log(amigos);
 }
