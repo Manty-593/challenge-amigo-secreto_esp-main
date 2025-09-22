@@ -9,7 +9,7 @@ function agregarAmigo() {
         document.getElementById("amigo").value = "";
         mostrarAmigos();
     } else {
-        alert("Por favor, ingresa un nombre válido.");
+        document.getElementById("error").textContent = "Por favor, ingresa un nombre válido.";
     }
 }
 
