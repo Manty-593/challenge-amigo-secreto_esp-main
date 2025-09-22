@@ -8,6 +8,8 @@ function agregarAmigo() {
         amigos.push(amigo);
         document.getElementById("amigo").value = "";
         mostrarAmigos();
+    } else {
+        alert("Por favor, ingresa un nombre válido.");
     }
 }
 
